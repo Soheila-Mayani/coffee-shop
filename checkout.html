@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>checkout page</title>
+        <link rel="stylesheet" href="stylecoffee.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <a class="headerlogo" href="indexcoffee.html"><img src="images/logo.png"></a>
+                <span id="headername">Joe's coffee store</span>
+                <input class="searchbox" type="search" placeholder="search our site">
+            </div>
+            <nav class="navigationheader">
+                <ul>
+                    <li><a class="navlink" href="indexcoffee.html">Home</a></li>
+                    <li><a class="navlink" href="blog.html">Blog</a></li>
+                    <li><a class="navlink" href="allcoffees.html">Our coffees</a></li>
+                    <li><a class="navlink" href="accessories.html">Accessories</a></li>
+                    <li><a class="navlink" href="Gifts.html">Gifts</a></li>
+                    <li><a class="navlink" href="findus.html">Find us</a></li>
+                    <li><a class="navlink" href="checkout.html">Checkout</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <!--main-->
+        <div id="coffeeimage">
+            <img src="images/coffeeheader.jpg">
+        </div>
+        <div id="coffeesbagimage">
+            <img src="images/cotm.jpg">
+        </div>
+        <section class="checkout">
+            <header>Checkout</header>
+            <!--form-->
+            <form class="firstform" method="POST" action="#">
+                <fieldset class="box">
+                    <legend>Your details</legend>
+                    <div>
+                        <p>
+                            <label class="textlabel" for="firstnameinput">Fitst Name</label>
+                            <input type="text" id="firstnameinput" name="firstname" 
+                            maxlength="30" required placeholder="please enter your first name" class="textinptut" autofocus>
+                        </p>
+                        <p>
+                          <label class="textlabel" for="lastnameinput">Last Name</label>
+                          <input type="text" id="lastnameinput" name="lastname"
+                          maxlength="50" required placeholder="please enter your last name" 
+                          size="25" class="textinptut">
+                      </p>
+                      <p>
+                          <label class="textlabel" for="emailinput">Email</label>
+                          <input type="email" id="emailinput" name="email"
+                          required placeholder="please enter your email" class="textinptut">
+                      </p>
+                      <p>
+                          <label class="textlabel" for="streetinput">Street</label>
+                          <input type="text" id="streetinput" name="street"
+                          required placeholder="please enter your street" class="textinptut">
+                      </p>
+                      <p>
+                          <label class="textlabel" for="numberinput">Number</label>
+                          <input type="text" id="numberinput" name="number"
+                          required placeholder="please enter your number" class="textinptut">
+                      </p>
+                      <p>
+                          <label class="textlabel" for="zipcodeinput">Zip Code</label>
+                          <input type="text" id="zipcodeinput" name="zipcode"
+                          required placeholder="please enter your zip code" class="textinptut">
+                      </p>
+                      <p>
+                          <label class="textlabel" for="cityinput">City</label>
+                          <input type="text" id="cityinput" name="city"
+                          required placeholder="please enter your city" class="textinptut">
+                      </p>
+                      <p>
+                          <label class="textlabel" for="countryinput">Country</label>
+                          <input type="text" id="countryinput" name="country"
+                          required placeholder="please enter your country(3 letters code)" 
+                          pattern="[a-za-z]{3}" class="textinptut">
+                      </p>
+                      <p>
+                          <label class="textlabel" for="phonenumberinput">Phone Number</label>
+                          <input type="text" id="phonenumberinput" name="phonenumber"
+                          required placeholder="please enter your phone number" class="textinptut">
+                      </p>
+                      <p>
+                          <label class="textlabel" for="bloginput">Blog</label>
+                          <input type="url" id="bloginput" name="blog"
+                         placeholder="please enter your blog address" class="textinptut">
+                      </p>
+                      <p>
+                          <label class="textlabel" for="remarksinput">Remarks</label>
+                          <input type="text" id="remarksinput" name="remarks"
+                          placeholder="please enter your remarks" class="textinptut">
+                      </p>
+
+                    </div>
+                </fieldset>
+            </br>
+                <fieldset class="box">
+                    <legend>You order</legend>
+                    <div>
+                        <p>
+                            <label class="textlabel" for="deliverydateinput">Requested delivery date</label>
+                            <input type="date" id="deliverydateinput" name="birthdate"
+                            placeholder="please enter a date " class="textinptut">
+                        </p>
+                        <p>
+                            <label class="textlabel" for="colorInput">Wrapping paper color</label>
+                            <input id="colorInput" name="Color" type="color" 
+                            placeholder="please select a color"  class="textinput"
+                                  />
+                        </p>
+                        <p>
+                            <label class="textlabel" for="bowInput">How many bows on the package?</label>
+                            <input id="bowInput" name="Bows" type="number" required
+                            placeholder="please enter a number" max="10" min="1"
+                            class="textinput"
+                                    />
+                        </p>
+
+                    </div>
+                </fieldset>
+                <input type="submit" class="submitbutton" value="Place order" />
+
+             
+            </form>
+        </section>
+    </body>
+</html>

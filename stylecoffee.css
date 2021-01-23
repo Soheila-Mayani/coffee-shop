@@ -1,0 +1,356 @@
+body
+{
+    width: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+}
+@font-face
+{
+    font-family: headerfont;
+    src: url(fonts/lopster-1.3.otf);
+}
+header
+{
+    font-weight: bold;
+}
+.headerlogo
+{
+    float: left;
+    margin-right: 10px;
+}
+   .headerlogo > img
+   {
+       width: 60px;
+       height: 60px;
+   }
+#headername
+{
+    font-family: headerfont;
+    text-shadow: 5px 5px 5px #5f2c17;
+    margin: 8px 0px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #603813;
+    padding: 15px;
+}
+.navigationheader
+{
+    background-color: #603813;
+    width: 100%;
+    height: 45px;
+    margin: 20px 0px 5px;
+    padding: 5px;
+    padding-left: 50px;
+    background: linear-gradient(to right, #603813, #341c05);
+}
+     .navigationheader > ul
+     {
+         list-style: none;
+         padding: 0;
+     }
+
+         .navigationheader > ul > li
+         {
+            display: block;
+         }
+.navlink
+{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+    height: 35px;
+    
+}
+
+     
+
+.searchbox
+{
+    float: right;
+    width: 200px;
+    margin: 10px;
+    padding: 5px;
+   
+}
+#coffeeimage
+{
+    float: left;
+    width: 700px;
+}
+#coffeesbagimage
+{
+    float: right;
+    width: 200px;
+}
+/*float property is very important becuase of margin-top property*/
+.welcometext
+{
+   width: 70%;
+   float: left;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   font-size: 12px;
+   column-count: 2;
+}
+     .welcometext > header
+     {
+          font-size: 15px;
+          font-weight: bold;
+          color: #603813;
+     }
+.events
+{
+    width: 30%;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+     .events > header
+     {
+          color: #603813;
+          font-size: 15px;
+          font-weight: bold;
+          margin-left: 10px;
+        margin-bottom: 3px;
+     }
+     .events > ul
+     {
+          list-style: none; 
+     }
+           .events > ul > li
+           {
+                margin-bottom: 3px;
+           } 
+
+/*best sellers*/
+.bestsellers
+{
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:  70%;
+    height: 40%;
+}
+        .bestsellers > header
+        {
+            color: #603813;
+            font-size: 15px;
+            font-weight: bold;
+
+        }
+ /*coffee sellers*/       
+ .coffeesellers
+ {
+     float: left;
+     width: 100%;
+ }
+        .coffeesellers > header
+        {
+            background-color:#603813;
+            color: white;
+            padding: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            background: linear-gradient(to right, #603813, #341c05);
+
+        }
+
+        .coffeearticle
+        {
+            width: 200px;
+            float: left;
+            margin-bottom: 10px;
+            margin-left: 25px;
+        }
+             .articleimage > img
+             {
+        
+                 width: 100px;
+                 height: 150px;
+             }
+             .price
+             {
+                 font-weight: bold;
+                 font-size: 15px;
+                 color: green;
+                 padding-top: 15px;
+             }
+        
+             .articleheader
+             {
+                 font-size: 15px;
+                 font-weight: bold;
+                 color: #603813;
+             }
+             .addtocart
+             {
+                 cursor: pointer;
+                 background-color:  #603813;
+                 color: white;
+                 padding: 4px 25px;
+                 width: 80px;
+                 border: 1px solid #381f09;
+                 border-radius: 8px;
+                 font-size: 0.8em;
+                 box-shadow: 0 0 4px rgba(0,0,0, .75);
+                
+             }
+/*accessories*/
+.accessories
+{
+    clear: both;
+}
+     .accessories > header
+     {
+
+        background-color:#603813;
+        color: white;
+        padding: 5px;
+        font-size: 15px;
+        font-weight: bold;
+        background: linear-gradient(to right, #603813, #341c05);
+
+     }
+     /*foorter*/
+     .footer
+     {
+         width: 100%;
+         background-color:#5c5045;
+         clear: both;
+         margin: 20px 0px 20px;
+         padding: 5px;
+     }
+     .time
+     {
+         font-size: 13px;
+
+     }
+
+     /*css is about coffeedetails page*/
+     .coffeedetails
+     {
+         width: 100%;
+         float: left;
+         margin-top: 20px;
+         margin-bottom: 10px;
+     }
+     .coffeedetailsheader
+     {
+         font-size: 40px;
+         font-weight: bold;
+         margin-bottom: 30px;
+         padding-left: 5px;
+         
+     }
+     .coffeedetailsimage
+     {
+         width: 20%;
+         float: left;
+     }
+          .coffeedetailsimage > img
+          {
+              width: 200px;
+              height: 250px;
+              margin-left: 20px;
+              margin-bottom: 20px;
+
+          }
+.coffeedetailstitle
+{
+    margin-left: 0px;
+}          
+.coffeedetailscontent
+{
+    width: 70%;
+    float: right;
+}
+.coffeedetailstext
+{
+    font: normal;
+}
+.coffeedetailsprice
+{
+    color: green;
+    font-size: 25px;
+    font-weight: bold;
+}
+/*css is about all coffee*/
+.allcoffee
+{
+    width: 75%;
+    float: left;
+    margin: 10px 0px;
+    font-family: headerfont;
+}
+     .allcoffee > header
+     {
+         font-size: 20px;
+         font-weight: bold;
+         margin: 10px 0px;
+
+     }
+.allcoffeesection
+{
+    float: left;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+
+}     
+.allcoffeeimage
+{
+    float: left;
+    width: 100px;
+    height: 150px;
+    margin: 20px;
+}
+.allcoffeecontent
+{
+    width: 70%;
+    float: right;
+    margin-top: 20px;
+
+}
+   .allcoffeecontent > header
+   {
+       font-size: 20px;
+       font-weight: bold;
+       color: #603813;
+   }
+.allcoffeeprice
+{
+    color: green;
+    font-size: 20px;
+
+}
+.allcoffeeshopping
+{
+    width: 20%;
+    float: left;
+    margin: 10px 5px;
+    font-family: headerfont;
+}
+    .allcoffeeshopping > header
+    {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    /*css is about checkout page*/
+    .checkout
+    {
+        float: left;
+        width: 100%;
+    }
+         .checkout > header
+         {
+             font-weight: bold;
+             font-size: 30px;
+             margin-top: 10px;
+             margin-bottom: 20px;
+             font-family: headerfont;
+         }
